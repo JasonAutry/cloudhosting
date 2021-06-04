@@ -12,6 +12,8 @@ require (
 	github.com/dimchansky/utfbom v1.1.1 // indirect
 	github.com/globalsign/mgo v0.0.0-20181015135952-eeefdecb41b8 // indirect
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
+	github.com/gorilla/mux v1.8.0 // indirect
+	github.com/gorilla/sessions v1.2.1 // indirect
 	github.com/icza/gowut v1.4.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/satori/go.uuid v1.2.0 // indirect

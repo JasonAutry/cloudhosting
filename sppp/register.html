@@ -3,11 +3,18 @@
 	<title></title>
 	</head>
 	<body>
+		<a href="/login">Already have an account? Login here</a>
 		<form action="/register" method="post">
-			Username:<input type="text" name="username">
-			Password:<input type="password" name="password">
+			Username:<input type="text" name="username" maxlength="16">
+			Password:<input type="password" name="password" maxlength="20">
+			Real Name:<input type="text" name="realname" maxlength="80">
+			<p>Enter up to 5 groups to join:<input type="text" name="group1" maxlength="30"><input type="text" name="group2" maxlength="30"><input type="text" name="group3" maxlength="30"><input type="text" name="group4" maxlength="30"><input type="text" name="group5" maxlength="30"></p>
 			<input type="submit" value="Login">
 		</form>
-		 <a href="/login">Already have an account? Login here</a> 
+		All Group names
+		{{range $Groups := .Allgroups}}
+		<p>{{$Groups}} </p>
+		{{end}}
+
 	</body>
 </html>

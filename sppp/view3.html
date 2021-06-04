@@ -1,0 +1,13 @@
+<html>
+	<head>
+	<title>{{.Title}}</title>
+	</head>
+	<body>
+		<a href="/upload">Upload a File</a>
+		<a href="/logout">Logout</a>
+			Your Information
+			{{range $Item := .Allitems}}
+		 	<p><a href="/result/{{$Item}}">{{$Item}}</a> </p>
+		 	{{end}}
+	</body>
+</html>

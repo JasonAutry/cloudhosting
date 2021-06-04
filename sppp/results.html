@@ -3,10 +3,20 @@
 	<title></title>
 	</head>
 	<body>
-		
-			Your Information
-			{{range .Items}}
-		 <a href="/{{.title}}">{{.title}}</a> 
-		 {{end}}
+		<form action="?" method="post">
+			<input type="submit" value="Delete object {{.ID}}">
+			<input type="hidden" name="ID" value="{{.ID}}" />
+			<input type="hidden" name="Action" value="DELETE" />
+		</form>
+		<form action="?" method="post">
+			<input type="submit" value="Download object {{.ID}}">
+			<input type="hidden" name="ID" value="{{.ID}}" />
+			<input type="hidden" name="Action" value="DOWNLOAD" />
+		</form>
+
+		<p>Creator:{{.Creator_Name}}</p><p>File Name:{{.Item_title}}</p><p>Description:{{.Item_Description}}</p><p>Item Id number:{{.ID}}</p><p>Date Created:{{.Creation}}</p><p>Last Accessed:{{.Lastviewed}}</p><p>Group:{{.Groupnamecol}}</p>
+
+
+		<p><a href="/view">return to view</a></p>
 	</body>
 </html>

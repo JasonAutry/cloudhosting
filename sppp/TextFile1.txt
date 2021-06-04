@@ -1,0 +1,5 @@
+things that need completing in the code itself:
+groups
+get response from teacher to help figure out the getting project working on cloud server
+add the extra registration attributes
+have last viewed update when viewed
